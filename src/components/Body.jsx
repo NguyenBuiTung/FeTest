@@ -4,8 +4,6 @@ import { Button, Layout, Menu } from "antd";
 import { Link, Outlet } from "react-router-dom";
 import { menuItems, rootSubmenuKeys } from "./Slider/adminmenu";
 import HeaderConek from "./Header/HeaderConek";
-import { useSelector } from "react-redux";
-// import { items } from "./Slider/adminmenu";
 const { Header, Sider, Content } = Layout;
 const headerStyle = {
   color: "#fff",
@@ -90,45 +88,8 @@ export default function Body() {
 }
 
 export function renderMenuItems(items) {
-
-  const hideForRoles = {
-    BRANCH_MANAGER: [
-      "customersee",
-      // "sms",
-      // "stote",
-      // "settings",
-      "info-point",
-      "historypoint",
-      "list-account"
-    ],
-    STAFF: [
-      // "stote",
-      "customersee",
-      // "sms",
-      // "settings",
-      "info-point",
-      "historypoint",
-      "list-account"
-    ],
-    CUSTOMER: [
-      "list-account",
-      "mcoupon",
-      "sms",
-      "storemanager",
-      "giaodich",
-      "customer",
-      "home",
-      "settings",
-    ],
-    SHOP: ["customersee", "info-point", "historypoint","list-account"],
-    ADMIN: ["customersee", "info-point", "historypoint"],
-  };
-  // const hiddenKeys = hideForRoles[user?.data?.type] || [];
   return items
     .map((item) => {
-      // if (hiddenKeys.includes(item.key)) {
-      //   return null;
-      // }
       if (item.children) {
         const subMenuItems = renderMenuItems(item.children);
         if (subMenuItems.some((subItem) => subItem !== null)) {
