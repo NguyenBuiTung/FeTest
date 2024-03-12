@@ -1,0 +1,381 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #454545 !important;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.home-dashboard .box {
+  background-color: #fff;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.home-dashboard .box h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-dashboard .box h3 span {
+  margin-left: 5px;
+}
+
+.home-dashboard .box p {
+  color: rgb(22, 119, 255);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home-dashboard .title-table {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.home-dashboard h2 {
+  margin: 20px 0;
+}
+.home-dashboard h3 {
+  margin: 20px 0;
+  font-weight: 500;
+}
+.home-dashboard .chart {
+  margin: 20px 0;
+  text-align: center;
+}
+.home-dashboard .total-group {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.home-dashboard .total-group .box-total-group {
+  padding: 24px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.home-dashboard .total-group .box-total-group .anticon {
+  font-size: 40px;
+  color: #ffa940;
+}
+.home-dashboard .total-group .box-total-group p:nth-child(1) {
+  color: rgb(117, 117, 117);
+  font-size: 18px;
+  font-weight: 400;
+}
+.home-dashboard .total-group .box-total-group p:nth-child(2) {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.login {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 100vh;
+  background-color: #eaf0fa;
+}
+.login .box-login {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.login .box-login .box-login-container {
+  width: 450px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 14px;
+}
+@media (max-width: 450px) {
+  .login .box-login .box-login-container {
+    width: 300px;
+  }
+}
+.login .box-login .box-login-container .login-box {
+  padding: 30px 30px 44px;
+}
+.login .box-login .box-login-container .login-box .title {
+  text-align: center;
+}
+.login .box-login .box-login-container .login-box .title h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (max-width: 450px) {
+  .login .box-login .box-login-container .login-box .title h2 {
+    font-size: 14px;
+  }
+}
+.login .box-login .box-login-container .login-box .form-login {
+  margin-top: 35px;
+}
+.login .box-login .box-login-container .login-box .form-login .ant-input {
+  padding: 7px;
+}
+.login .box-login .box-login-container .login-box .form-login .ant-input-number-input-wrap {
+  padding: 7px;
+}
+.login .box-login .box-login-container .login-box .form-login .google-login-btn {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: 1px solid #bfbfbf;
+  /* Thiết lập màu sắc */
+  color: #000;
+  background-color: #fff; /* Màu của Google */
+  border-radius: 6px;
+  width: 100%;
+  /* Thiết lập padding và margin */
+  padding: 10px 20px;
+  margin: 5px;
+  justify-content: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.login .box-login .box-login-container .login-box .form-login .google-login-btn img {
+  width: 50px;
+}
+.login .box-login .box-login-container .login-box .form-login .google-login-btn:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.register-user {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 100vh;
+  background-color: #eaf0fa;
+}
+.register-user .register-box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.register-user .register-box h2 {
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .register-user .register-box h2 {
+    font-size: 14px;
+  }
+}
+.register-user .register-box #register {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: auto;
+}
+@media (max-width: 600px) {
+  .register-user .register-box #register {
+    width: 300px;
+  }
+}
+.register-user .register-box #register .ant-input {
+  padding: 7px;
+}
+.register-user .register-box #register .ant-input-number-input-wrap {
+  padding: 7px;
+}
+
+.ant-breadcrumb-link .active {
+  color: #faad14 !important;
+}
+
+.ant-breadcrumb {
+  padding: 20px 0;
+}
+
+.editUser .ant-flex .boxedituser {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+}
+@media (max-width: 450px) {
+  .editUser .ant-flex .boxedituser {
+    width: 300px;
+  }
+}
+.editUser .ant-flex .boxedituser #register .ant-input-affix-wrapper {
+  padding: 7px;
+}
+.editUser .ant-flex .boxedituser #register .ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload.ant-upload-select > .ant-upload {
+  height: initial;
+}
+.editUser .ant-flex .boxedituser #register .ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload.ant-upload-select > .ant-upload .upload-container {
+  position: relative;
+  display: inline-block;
+}
+.editUser .ant-flex .boxedituser #register .ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload.ant-upload-select > .ant-upload .upload-container .spin-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.editUser .boxedituser {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+}
+@media (max-width: 450px) {
+  .editUser .boxedituser {
+    width: 300px;
+  }
+}
+.editUser .boxedituser #editpassword .ant-input-affix-wrapper {
+  padding: 7px;
+}
+
+.ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+.ant-layout-header .menu-button {
+  display: none;
+}
+@media screen and (max-width: 530px) {
+  .ant-layout-header .menu-button {
+    display: block;
+  }
+}
+.ant-layout-header .header-content {
+  display: block;
+}
+@media screen and (max-width: 530px) {
+  .ant-layout-header .header-content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .ant-drawer .ant-drawer-content-wrapper {
+    width: 300px !important;
+  }
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > td {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.trade .box-trade {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+}
+
+.setting-branch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.setting-branch #branch-setting {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.detail-history .ant-row {
+  padding: 10px 0;
+}
+.detail-history .detail-customer {
+  font-size: 16px;
+  color: #000;
+}
+.detail-history .detail-customer span {
+  font-weight: 400;
+  font-size: 17px;
+  color: #1677ff;
+}
+.detail-history .detail-staff {
+  font-size: 16px;
+  color: #000;
+}
+.detail-history .detail-staff span {
+  font-weight: 400;
+  font-size: 17px;
+  color: #1677ff;
+}
+.detail-history .detail-branch {
+  font-size: 16px;
+  color: #000;
+}
+.detail-history .detail-branch span {
+  font-weight: 400;
+  font-size: 17px;
+  color: #1677ff;
+}
+.detail-history .detail-trade {
+  font-size: 16px;
+  color: #000;
+}
+.detail-history .detail-trade span {
+  font-weight: 400;
+  font-size: 17px;
+  color: #1677ff;
+}
+
+.sent-sms .box-sentsms {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+}
+.sent-sms .box-sentsms h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.ant-picker-dropdown .ant-picker-presets li span {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  min-width: 200px;
+  height: 39px;
+  line-height: 39px;
+  background-color: transparent;
+}
+
+#addDonateCoupon {
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.ant-table-tbody .ant-skeleton {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,22 @@
+.ant-layout-header{
+    .menu-button{
+        @media screen and (max-width: 530px){
+            display: block;
+        }
+        display: none;
+    }
+    .header-content{
+        @media screen and (max-width: 530px){
+            display: none;
+        }
+        display: block;
+    }
+    
+}
+.ant-drawer{
+    .ant-drawer-content-wrapper{
+        @media screen and (max-width: 530px){
+           width: 300px !important;
+        }
+    }
+}

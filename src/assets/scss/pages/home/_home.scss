@@ -1,0 +1,22 @@
+
+.ant-picker-dropdown{
+    .ant-picker-presets{
+        li{
+            span{
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                width: 100%;
+                min-width: 200px;
+                height: 39px;
+                line-height: 39px;
+                background-color: transparent;
+            }
+        }
+    }
+}
+#addDonateCoupon{
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 10px;
+}
