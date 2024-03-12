@@ -12,7 +12,7 @@ export default function ListAccout() {
     (state) => state.persistedReducer.user
   );
   // console.log(userShop)
-  const options = userShop.map((item) => {
+  const options = userShop?.map((item) => {
     return {
       value: item.id,
       label: item.id,
@@ -72,7 +72,6 @@ export default function ListAccout() {
     },
   ];
   const handleFilterChange = (value) => {
-    console.log(value);
      store.dispatch(getUserShop({ currentPage, pageSize,value }));
   };
   return (
