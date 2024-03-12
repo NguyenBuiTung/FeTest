@@ -107,67 +107,51 @@ export default function RouterApp() {
           <HistoryRouter history={history}>
             <Suspense fallback={<LoadingProgress />}>
               <Routes>
-                <Route path="" element={<RoutePrivate />}>
-                  <Route path="" element={<Body />}>
-                    <Route path="*" element={<Page404 />} />
-                    <Route index element={<Home />} />
-                    <Route path="/store-manager" element={<TabStore />} />
-                    <Route path="/post-manager" element={<ListAccout />} />
-                    <Route path="/setting-branch" element={<SettingBranch />} />
-                    <Route
-                      path="/employee-manager"
-                      element={<EmployeeManager />}
-                    />
-                    <Route path="/mcoupon" element={<TableMcoupon />} />
-                    <Route
-                      path="/donate-directly"
-                      element={<FormAddDonate />}
-                    />
-                    <Route path="/voucher" element={<TableVoucher />} />
-                    <Route path="/restorePr" element={<Restore />} />
-                    <Route path="/customer" element={<TableCustomer />} />
-                    <Route path="/customer-see" element={<CustomerSee />} />
-                    <Route
-                      path="/transactions-customer"
-                      element={<TransactionCustomer />}
-                    />
-                    <Route
-                      path="/info-point-store"
-                      element={<TableStoreCustomer />}
-                    />
-                    <Route
-                      path="/customertype"
-                      element={<ClassificationTable />}
-                    />
-                    <Route
-                      path="/rank-customer"
-                      element={<TableRankCustomer />}
-                    />
-                    <Route
-                      path="/customer-group"
-                      element={<TableGroupCustomer />}
-                    />
-                  
-                   
-                    
-                    <Route
-                      path="/settings"
-                      element={<SmsConfiguration />}
-                    />
-                    <Route
-                      path="/sent-smsgroup"
-                      element={<SendGroupMessages />}
-                    />
-                    <Route
-                      path="/line-chart"
-                      element={<LineChart />}
-                    />
-                    <Route
-                      path="/bar-chart"
-                      element={<Barchart />}
-                    />
-                    <Route path="/history-sms" element={<HistorySms />} />
-                  </Route>
+                <Route path="" element={<Body />}>
+                  <Route path="*" element={<Page404 />} />
+                  <Route index element={<Home />} />
+                  <Route path="/store-manager" element={<TabStore />} />
+                  <Route path="/post-manager" element={<ListAccout />} />
+                  <Route path="/setting-branch" element={<SettingBranch />} />
+                  <Route
+                    path="/employee-manager"
+                    element={<EmployeeManager />}
+                  />
+                  <Route path="/mcoupon" element={<TableMcoupon />} />
+                  <Route path="/donate-directly" element={<FormAddDonate />} />
+                  <Route path="/voucher" element={<TableVoucher />} />
+                  <Route path="/restorePr" element={<Restore />} />
+                  <Route path="/customer" element={<TableCustomer />} />
+                  <Route path="/customer-see" element={<CustomerSee />} />
+                  <Route
+                    path="/transactions-customer"
+                    element={<TransactionCustomer />}
+                  />
+                  <Route
+                    path="/info-point-store"
+                    element={<TableStoreCustomer />}
+                  />
+                  <Route
+                    path="/customertype"
+                    element={<ClassificationTable />}
+                  />
+                  <Route
+                    path="/rank-customer"
+                    element={<TableRankCustomer />}
+                  />
+                  <Route
+                    path="/customer-group"
+                    element={<TableGroupCustomer />}
+                  />
+
+                  <Route path="/settings" element={<SmsConfiguration />} />
+                  <Route
+                    path="/sent-smsgroup"
+                    element={<SendGroupMessages />}
+                  />
+                  <Route path="/line-chart" element={<LineChart />} />
+                  <Route path="/bar-chart" element={<Barchart />} />
+                  <Route path="/history-sms" element={<HistorySms />} />
                 </Route>
               </Routes>
             </Suspense>

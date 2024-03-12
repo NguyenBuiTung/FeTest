@@ -1,5 +1,5 @@
 import { EyeOutlined } from '@ant-design/icons';
-import { Modal } from 'antd';
+import { Modal, Tooltip } from 'antd';
 import React, { useState } from 'react'
 
 export default function ModalView({record}) {
@@ -17,7 +17,9 @@ export default function ModalView({record}) {
   return (
     <div>
         
-      <EyeOutlined onClick={showModal} style={{ color: "#f5222d", fontSize: 20,cursor:"pointer" }} />
+      <Tooltip placement='top' title="Xem chi tiết">
+      <EyeOutlined onClick={showModal} style={{ color: "#4096ff", fontSize: 20,cursor:"pointer" }} />
+      </Tooltip>
       <Modal title="Chi tiết bài xem" open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel}>
         <p>id:{record.id}</p>
         <p>UserId:{record.userId}</p>
