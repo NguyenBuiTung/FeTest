@@ -20,14 +20,6 @@ export default function SmsConfiguration() {
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
   };
-
-  const validateInput = (_, value) => {
-    if (!value) {
-      return Promise.reject("Vui lòng nhập giá trị!");
-    }
-    return Promise.resolve();
-  };
-
   return (
     <div className="editUser">
       <h2 style={{ marginBottom: 20 }}>Cấu hình</h2>
@@ -43,18 +35,30 @@ export default function SmsConfiguration() {
         <Form.Item
           label="Title"
           name="title"
-          rules={[{ validator: validateInput }]}
+          rules={[{ required:true,message:"Vui lòng nhập title" }]}
         >
           <Input placeholder="Plain Text" />
         </Form.Item>
         <Form.Item
           label="Email"
           name="email"
-          rules={[{ required: true, type: "email", message: "Email không hợp lệ!" }]}
+          rules={[
+            { required: true, type: "email", message: "Email không hợp lệ!" },
+          ]}
         >
           <Input placeholder="Email" />
         </Form.Item>
-        <Form.Item required={true} label="Thời gian">
+        <Form.Item
+        name="time"
+          rules={[
+            {
+              type: "array",
+              required: true,
+              message: "Vui lòng chọn thời gian",
+            },
+          ]}
+          label="Thời gian"
+        >
           <RangePicker />
         </Form.Item>
         <Form.Item
