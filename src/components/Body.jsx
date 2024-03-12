@@ -21,7 +21,6 @@ const headerStyle = {
 };
 
 export default function Body() {
-  const { user } = useSelector((state) => state.persistedReducer.user);
   const [collapsed, setCollapsed] = useState(false);
   const onClick = (e) => {
     // navigate(e.key);
@@ -71,7 +70,7 @@ export default function Body() {
               openKeys={openKeys}
               onOpenChange={onOpenChange}
             >
-              {renderMenuItems(menuItems, user)}
+              {renderMenuItems(menuItems)}
             </Menu>
           </Sider>
           <Content
@@ -90,8 +89,7 @@ export default function Body() {
   );
 }
 
-export function renderMenuItems(items, user) {
-  if (!user) return null;
+export function renderMenuItems(items) {
 
   const hideForRoles = {
     BRANCH_MANAGER: [
@@ -125,14 +123,14 @@ export function renderMenuItems(items, user) {
     SHOP: ["customersee", "info-point", "historypoint","list-account"],
     ADMIN: ["customersee", "info-point", "historypoint"],
   };
-  const hiddenKeys = hideForRoles[user.data.type] || [];
+  // const hiddenKeys = hideForRoles[user?.data?.type] || [];
   return items
     .map((item) => {
-      if (hiddenKeys.includes(item.key)) {
-        return null;
-      }
+      // if (hiddenKeys.includes(item.key)) {
+      //   return null;
+      // }
       if (item.children) {
-        const subMenuItems = renderMenuItems(item.children, user);
+        const subMenuItems = renderMenuItems(item.children);
         if (subMenuItems.some((subItem) => subItem !== null)) {
           return (
             <Menu.SubMenu key={item.key} icon={item.icon} title={item.label}>

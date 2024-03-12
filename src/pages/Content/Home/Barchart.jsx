@@ -14,47 +14,51 @@ import {
 export default function Barchart() {
   const data = [
     {
-      Tháng: "1",
+      Tháng: "Tháng 1",
       "Doanh thu": 100000
     },
     {
-      Tháng: "2",
+      Tháng: "Tháng 2",
       "Doanh thu": 200000
     },
     {
-      Tháng: "3",
+      Tháng: "Tháng 3",
       "Doanh thu": 300000
     },
     {
-      Tháng: "4",
+      Tháng: "Tháng 4",
       "Doanh thu": 400000
     },
     {
-      Tháng: "5",
+      Tháng: "Tháng 5",
       "Doanh thu": 500000
     },
     {
-      Tháng: "6",
+      Tháng: "Tháng 6",
       "Doanh thu": 600000
     },
     {
-      Tháng: "7",
+      Tháng: "Tháng 7",
+      "Doanh thu": 700000
+    },
+    {
+      Tháng: "Tháng 8",
       "Doanh thu": 800000
     },
     {
-      Tháng: "9",
+      Tháng: "Tháng 9",
       "Doanh thu": 900000
     },
     {
-      Tháng: "10",
+      Tháng: "Tháng 10",
       "Doanh thu": 1000000
     },
     {
-      Tháng: "11",
+      Tháng: "Tháng 11",
       "Doanh thu": 1100000
     },
     {
-      Tháng: "12",
+      Tháng: "Tháng 12",
       "Doanh thu": 1200000
     },
     
